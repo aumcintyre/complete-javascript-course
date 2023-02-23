@@ -40,3 +40,9 @@ console.log(avgPopulation > population);
 const description = 'Portugal is in Europe, and its 11 million people speak portuguese.'
 
 console.log(description);
+
+const sarahCountry = (population < 50000000 && language === 'English' && !isIsland)
+
+if (sarahCountry) {
+    console.log(`Sarah would love living in ${country}`);
+} else { console.log(`${country} does not match what Sarah is looking for`); }

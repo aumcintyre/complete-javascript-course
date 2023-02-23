@@ -115,17 +115,133 @@ console.log(typeof null);
 
 // console.log(austin);
 
-// const austinNew = `Hi, my name is ${firstName}, and I am ${currentYear - birthYear} years old. 
+// const austinNew = `Hi, my name is ${firstName}, and I am ${currentYear - birthYear} years old.
 // I work as a ${job}.`
 
 // console.log(austinNew);
 
 //==================IF / ELSE STATEMENTS===============
-const age = 17;
-const isOldEnough = age >= 18;
+// const age = 17;
+// const isOldEnough = age >= 18;
 
-if (isOldEnough) {
-    console.log('YAY 👌');
+// if (isOldEnough) {
+//     console.log('YAY 👌');
+// } else {
+//     const yearsLeft = 18 - age;
+//     console.log(`BOO, you still have ${yearsLeft} year(s) to go!`);
+// }
+
+// const birthYear = 2012;
+// let century;
+
+// if (birthYear < 2000) {
+//     century = '20th';
+// } else {
+//     century = '21st';
+// }
+
+// console.log(century);
+
+//==============TYPE CONVERSION & COERCION==============
+//Conversion - Manually convert from one type to another
+//Can only convert to a string, number, or boolean
+
+// const inputYear = '1991';
+// console.log(Number(inputYear));
+// console.log(String(23), 23)
+// console.log(inputYear + 18);
+
+//Coercion - JavaScript can automatically change the data type
+// console.log('I am ' + 23 + ' years old.');
+//String, number, then another string. The plus (+) operator initiates the coercion done on the backend.
+// console.log('23' - '10' - 3);
+//The minus(-) operator iniates the coercion and converts everything to numbers. The plus (+) operator would instead convert to strings
+
+// let n = '1' + 1 // '11'
+// n = n - 1 // '11' -> 11-1=10
+// console.log(n);
+//This results in an answer of 10 because '1' + 1 will show as 11 in the console (+) coerces data into strings. Then 1 is subtracted leaving 10.
+
+//==================TRUTHY & FALSEY=====================
+//In JS, there are 5 falsey values: 0, '', undefined, null, NaN
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean('Austin'));
+// console.log(Boolean({}));
+
+// const money = 1000;
+
+// if (money) {
+//     console.log("Don't spend it all in one place!");
+// } else {
+//     console.log("You're broke AF.");
+// }
+
+// let height = 0;
+
+// if (height) {
+//     console.log('Yay');
+// } else {
+//     console.log('Boo, undefined.');
+// }
+
+//==============|EQAULITY OPERATORS == & === |===========
+// const age = '18';
+
+// if (age === 18) console.log('STRICT. You just became an adult!');
+// if (age == 18) console.log('LOOSE. You just became an adult!');
+
+//(===) (Strict equality operator) will return a 'True' or 'False' boolean value. Only returns true when both values are EXACTLY the same. (No type coercion)
+//(==) (Loose equality operator) Will return a true boolean if both values are exactly the same or become the same after JS handles type coercion
+//GENERAL RULE IS TO AVOID LOOSE EQUALITY AS MUCH AS POSSIBLE. CONVERT TYPES BEFORE THE EQUALITY COMPARISON IF NECESSARY.(Shown below)
+
+// const favorite = Number(prompt('What is your favorite number?'));
+
+// console.log(favorite);
+// console.log(typeof favorite);
+
+// if (favorite === 23) {
+//     console.log('Cool, 23 is a dope number.');
+// } else if (favorite === 7) {
+//     console.log('7 is cool, but not as cool as 23');
+// } else {
+//     console.log(`The number ${favorite} sucks!`);
+// }
+
+//================BOOLEAN LOGIC===================
+//BASIC OPERATORS: AND (&&) OR (||) NOT (!)
+
+// const age = 16;
+
+// if (age >= 20);
+
+//===========LOGICAL OPERATORS============
+
+const hasDriversLicense = true; // Variable A
+const hasGoodVision = true; // Variable B
+
+// if (hasDriversLicense || hasGoodVision) { console.log('Yay'); } else { console.log('Boo'); }
+
+// if (hasDriversLicense && hasGoodVision) { console.log('Yay'); } else { console.log('Boo'); }
+
+// if (!hasDriversLicense) { console.log('Yay'); } else { console.log('Boo'); }
+
+
+
+// if (shouldDrive) {
+//     console.log('Sara is able to drive.');
+// } else {
+//     console.log('Sara can not drive.');
+// }
+
+const isTired = true; // Variable C
+
+const shouldDrive = hasDriversLicense && hasGoodVision && !isTired;
+
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (shouldDrive) {
+    console.log('Sara is able to drive.');
 } else {
-    console.log('BOO');
+    console.log('Jesus take the wheel.');
 }
