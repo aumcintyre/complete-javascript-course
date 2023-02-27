@@ -42,49 +42,56 @@
 // § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
 //Data 1
-let dolphinAvg = ((96 + 108 + 89) / 3);
-console.log(dolphinAvg);
-let koalasAvg = ((88 + 91 + 110) / 3);
-console.log((koalasAvg));
+// let dolphinAvg = ((96 + 108 + 89) / 3);
+// console.log(dolphinAvg);
+// let koalasAvg = ((88 + 91 + 110) / 3);
+// console.log((koalasAvg));
 
-if (dolphinAvg > koalasAvg && dolphinAvg >= 100) {
-    console.log(`Dolphins win by a score of ${dolphinAvg} to ${koalasAvg}!`);
-} else if (koalasAvg > dolphinAvg && koalasAvg >= 100) {
-    console.log(`Koalas win by a score of ${koalasAvg} to ${dolphinAvg}!`);
-} else if (dolphinAvg === koalasAvg && dolphinAvg >= 100) {
-    console.log('It is a draw!');
-} else if (dolphinAvg < 100 && koalasAvg < 100) {
-    console.log('Neither team scored high enough to win!');
-}
+// if (dolphinAvg > koalasAvg && dolphinAvg >= 100) {
+//     console.log(`Dolphins win by a score of ${dolphinAvg} to ${koalasAvg}!`);
+// } else if (koalasAvg > dolphinAvg && koalasAvg >= 100) {
+//     console.log(`Koalas win by a score of ${koalasAvg} to ${dolphinAvg}!`);
+// } else if (dolphinAvg === koalasAvg && dolphinAvg >= 100) {
+//     console.log('It is a draw!');
+// } else if (dolphinAvg < 100 && koalasAvg < 100) {
+//     console.log('Neither team scored high enough to win!');
+// }
 
-//Data 2
-dolphinAvg = ((97 + 112 + 101) / 3);
-console.log(dolphinAvg);
-koalasAvg = ((109 + 95 + 123) / 3);
-console.log((koalasAvg));
+// //Data 2
+// dolphinAvg = ((97 + 112 + 101) / 3);
+// console.log(dolphinAvg);
+// koalasAvg = ((109 + 95 + 123) / 3);
+// console.log((koalasAvg));
 
-if (dolphinAvg > koalasAvg && dolphinAvg > 100) {
-    console.log(`Dolphins win by a score of ${dolphinAvg} to ${koalasAvg}!`);
-} else if (koalasAvg > dolphinAvg && koalasAvg > 100) {
-    console.log(`Koalas win by a score of ${koalasAvg} to ${dolphinAvg}!`);
-} else if (dolphinAvg === koalasAvg && dolphinAvg >= 100) {
-    console.log('It is a draw!');
-} else if (dolphinAvg < 100 && koalasAvg < 100) {
-    console.log('Neither team scored high enough to win!');
-}
+// if (dolphinAvg > koalasAvg && dolphinAvg > 100) {
+//     console.log(`Dolphins win by a score of ${dolphinAvg} to ${koalasAvg}!`);
+// } else if (koalasAvg > dolphinAvg && koalasAvg > 100) {
+//     console.log(`Koalas win by a score of ${koalasAvg} to ${dolphinAvg}!`);
+// } else if (dolphinAvg === koalasAvg && dolphinAvg >= 100) {
+//     console.log('It is a draw!');
+// } else if (dolphinAvg < 100 && koalasAvg < 100) {
+//     console.log('Neither team scored high enough to win!');
+// }
 
-//Data 3
-dolphinAvg = ((97 + 112 + 101) / 3);
-console.log(dolphinAvg);
-koalasAvg = ((109 + 95 + 106) / 3);
-console.log((koalasAvg));
+// //Data 3
+// dolphinAvg = ((97 + 112 + 101) / 3);
+// console.log(dolphinAvg);
+// koalasAvg = ((109 + 95 + 106) / 3);
+// console.log((koalasAvg));
 
-if (dolphinAvg > koalasAvg && dolphinAvg > 100) {
-    console.log(`Dolphins win by a score of ${dolphinAvg} to ${koalasAvg}!`);
-} else if (koalasAvg > dolphinAvg && koalasAvg > 100) {
-    console.log(`Koalas win by a score of ${koalasAvg} to ${dolphinAvg}!`);
-} else if (dolphinAvg === koalasAvg && dolphinAvg >= 100) {
-    console.log('It is a draw!');
-} else if (dolphinAvg < 100 && koalasAvg < 100) {
-    console.log('Neither team scored high enough to win!');
-}
+// if (dolphinAvg > koalasAvg && dolphinAvg > 100) {
+//     console.log(`Dolphins win by a score of ${dolphinAvg} to ${koalasAvg}!`);
+// } else if (koalasAvg > dolphinAvg && koalasAvg > 100) {
+//     console.log(`Koalas win by a score of ${koalasAvg} to ${dolphinAvg}!`);
+// } else if (dolphinAvg === koalasAvg && dolphinAvg >= 100) {
+//     console.log('It is a draw!');
+// } else if (dolphinAvg < 100 && koalasAvg < 100) {
+//     console.log('Neither team scored high enough to win!');
+// }
+
+//==================CODING CHALLENGE 4===================
+const total = 40;
+
+const tip = total >= 50 && total <= 300 ? total * .15 : total * .2;
+
+console.log(`The bill total was ${total}. The tip was ${tip}, and the total value was ${total + tip}`);

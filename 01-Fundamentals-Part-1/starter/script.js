@@ -217,8 +217,8 @@ console.log(typeof null);
 
 //===========LOGICAL OPERATORS============
 
-const hasDriversLicense = true; // Variable A
-const hasGoodVision = true; // Variable B
+// const hasDriversLicense = true; // Variable A
+// const hasGoodVision = true; // Variable B
 
 // if (hasDriversLicense || hasGoodVision) { console.log('Yay'); } else { console.log('Boo'); }
 
@@ -234,14 +234,79 @@ const hasGoodVision = true; // Variable B
 //     console.log('Sara can not drive.');
 // }
 
-const isTired = true; // Variable C
+// const isTired = true; // Variable C
 
-const shouldDrive = hasDriversLicense && hasGoodVision && !isTired;
+// const shouldDrive = hasDriversLicense && hasGoodVision && !isTired;
 
-console.log(hasDriversLicense && hasGoodVision && isTired);
+// console.log(hasDriversLicense && hasGoodVision && isTired);
 
-if (shouldDrive) {
-    console.log('Sara is able to drive.');
-} else {
-    console.log('Jesus take the wheel.');
-}
+// if (shouldDrive) {
+//     console.log('Sara is able to drive.');
+// } else {
+//     console.log('Jesus take the wheel.');
+// }
+
+//===============SWITCH STATEMENTS================
+// const day = 'Monday';
+
+
+//Switch statements use strict equality. Capitalization and data types matter!!
+// switch (day) {
+//     case 'Monday':
+//         console.log('Plan my course structure.');
+//         console.log('I can execute multiple lines of code for each case!');
+//         break;
+//     case 'Tuesday':
+//         console.log('I sleep all day.');
+//         break;
+//     case 'Wednesday':
+//         console.log('HUMP DAY.');
+//         break;
+//     case 'Thursday':
+//     case 'Friday':
+//     case 'Saturday':
+//     case 'Sunday':
+//         console.log('Long weekends are great.');
+//         break;
+
+
+//     default:
+//         console.log('Not a valid day!');
+//         break;
+// }
+
+// if (day === 'Monday') {
+//     console.log('Plan my course structure.');
+// } else if (day === 'Tuesday') {
+//     console.log('I sleep all day.');
+// } else if (day === 'Wednesday') {
+//     console.log('HUMP DAY.');
+// } else if (day === 'Thursday' || 'Friday' || 'Saturday' || 'Sunday') {
+//     console.log('Long weekends are great.');
+// } else {
+//     console.log('Not a valid day!');
+// }
+
+//============STATEMENTS VS EXPRESSIONS==============
+
+// Expressions will produce a value | Example: 3 + 4
+//Single numbers can also be an expression as they are inherently a value. Boolean values are also expressions
+
+//Statements are the complete sentence, whereas expressions can be viewed as the words in the sentence.
+//IF ELSE / SWITCH is an easy example of a statement
+
+// if (23 > 18) {
+//     console.log('Neat');
+// }
+
+//Above is a statement. It does not produce a value on it's own, just logs a sentence to the console
+
+//==============CONDITIONAL TERNARY OPERATOR===========
+const age = 23;
+age >= 18 ? console.log('Good, you are old enough') : console.log('Too Young');
+
+const drink = age >= 18 ? 'Wine' : 'Water';
+
+console.log(drink);
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
