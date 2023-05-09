@@ -167,9 +167,9 @@ const printForecast = function (arr) {
     let temp = arr[i];
     let day = '';
     i > 0 ? (day = 'days') : (day = 'day');
-    tempReadout += `... ${temp}°C in ${index} ${day} `;
+    tempReadout += `${temp}°C in ${index} ${day}... `;
   }
-  console.log(tempReadout);
+  console.log('...' + tempReadout);
 };
 
 printForecast(data1);
