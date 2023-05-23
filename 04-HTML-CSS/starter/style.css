@@ -1,9 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+
 #container {
   display: flex;
-  box-sizing: border-box;
   width: 100%;
   justify-content: center;
   align-content: center;
   text-align: center;
   border: 1px solid red;
+}
+
+#your-name {
+  background-color: tan;
+  border: 5px solid #444;
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.first {
+  font-size: 24px;
+  color: red;
+}
+
+.second {
+  font-size: 48px;
+}
+
+.cubs-image {
+  height: 500px;
+  padding: 5px;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#your-name p {
+  color: red;
 }

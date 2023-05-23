@@ -13,19 +13,31 @@
       <h1>Hello World! JavaScript is fun but so is HTML and CSS!</h1>
     </div>
 
-    <p>First paragraph with a <a href="https://www.google.com">link</a></p>
+    <p class="first">
+      First paragraph with a <a href="https://www.google.com">link</a>
+    </p>
 
     <div id="container">
       <img
+        class="cubs-image"
         src="https://assets.turbologo.com/blog/en/2019/12/19084812/chicago-cubs-logo-cover-958x575.png"
         alt="Cubs Logo"
-        style="height: 25%; width: 25%"
-      />>
+      />
     </div>
     <br />
     <div id="container">
       <h2 style="justify-content: center">Another Heading</h2>
     </div>
-    <p>Second paragraph</p>
+    <p class="second">Second paragraph</p>
+
+    <!-- Form is the same thing as Div, just more specific. Div is a generic 'box'-->
+
+    <form id="your-name">
+      <h1>Form Example</h1>
+
+      <p>Please fill in this form</p>
+      <input type="text" placeholder="Your Name" />
+      <button>OK!</button>
+    </form>
   </body>
 </html>
