@@ -1,5 +1,5 @@
 // Remember, we're gonna use strict mode in all scripts now!
-/* 'use strict';
+'use strict';
 
 const xyz = 1;
 
@@ -16,7 +16,7 @@ console.log(numbers);
 
 const firstTwo = numbers.slice(0, 2);
 
-console.log(firstTwo); */
+console.log(firstTwo);
 
 //=============Pseudo - Code Example================
 //function reverseSort(value)
