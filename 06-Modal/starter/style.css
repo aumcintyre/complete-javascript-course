@@ -18,7 +18,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(to top left, #28b487, #7dd56f);
+  background: linear-gradient(to top left, #000000, #696969);
 }
 
 .show-modal {
@@ -27,8 +27,8 @@ body {
   padding: 1.75rem 3.5rem;
   margin: 5rem 2rem;
   border: none;
-  background-color: #fff;
-  color: #444;
+  background-color: rgb(0, 0, 0);
+  color: rgb(168, 244, 250);
   border-radius: 10rem;
   cursor: pointer;
 }

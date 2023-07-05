@@ -10,18 +10,14 @@ const displayMessage = function (message) {
 
 document.querySelector('.score').textContent = newScore;
 
-// document.querySelector('.number').textContent = secretNumber;
-
-document.querySelector('.check').addEventListener('click', function () {
+function checkGuess() {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess);
   console.log(typeof guess);
-
   //WHEN NO GUESS IS ENTERED
   if (!guess) {
     displayMessage('🤦‍♂️ No number was guessed!');
   }
-
   //WHEN PLAYER GUESSES CORRECTLY
   else if (guess === secretNumber) {
     displayMessage('👌 You guessed correctly!');
@@ -36,7 +32,6 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
   }
-
   //REFACTORED FROM 2 BLOCKS BELOW BECAUSE OF DUPLICATED CODE
   else if (guess !== secretNumber) {
     if (newScore > 1) {
@@ -50,7 +45,6 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = 0;
     }
   }
-
   //WHEN PLAYER GUESS IS TOO HIGH
   /*   else if (guess > secretNumber) {
     if (newScore > 1) {
@@ -65,7 +59,6 @@ document.querySelector('.check').addEventListener('click', function () {
     }
     console.log(newScore);
   } */
-
   //WHEN PLAYER GUESS IS TOO LOW
   /*   else if (guess < secretNumber) {
     if (newScore > 1) {
@@ -79,7 +72,25 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = 0;
     }
   } */
-});
+}
+
+function enterKey(e) {
+  if (e.key === 'Enter') {
+    checkGuess()
+  }
+}
+
+function escKey(e) {
+  if (e.key === 'Escape') {
+    resetGame()
+  }
+}
+
+// document.querySelector('.number').textContent = secretNumber;
+
+document.querySelector('.check').addEventListener('click', checkGuess);
+document.addEventListener('keydown', enterKey)
+document.addEventListener('keydown', escKey)
 
 console.log(newScore);
 
@@ -96,4 +107,4 @@ const resetGame = function () {
   document.querySelector('.guess').value = '';
 };
 
-document.querySelector('.again').addEventListener('click', resetGame());
+document.querySelector('.again').addEventListener('click', resetGame);
