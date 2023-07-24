@@ -17,11 +17,9 @@ function closeModal() {
 }
 
 function escapeKey(e) {
-    if (e.key === 'Escape') {
-        if (!modal.classList.contains('hidden')) {
-            modal.classList.add('hidden');
-            overlay.classList.add('hidden');
-        }
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        modal.classList.add('hidden');
+        overlay.classList.add('hidden');
         //if esc key was not pressed in combination with ctrl or alt or shift
         const isNotCombinedKey = !(e.ctrlKey || e.altKey || e.shiftKey);
         if (isNotCombinedKey) {
@@ -32,10 +30,12 @@ function escapeKey(e) {
 }
 
 function anyKey(e) {
-    if (e.key !== 'Escape') {
-        console.log(`They ${e.key} key was pressed`);
+    if (e.key !== 'Escape' && modal.classList.contains('hidden')) {
+        modal.classList.remove('hidden');
+        overlay.classList.remove('hidden');
     }
     console.log(e);
+    console.log(`They ${e.key} key was pressed`);
 }
 
 for (let i = 0; i < btnsOpenModal.length; i++)
